@@ -1,0 +1,140 @@
+.left {
+  background-color: rgb(233, 230, 230);
+  width: 30%;
+  max-width: 320px;
+  min-width: 200px;
+  position: relative;
+  overflow: scroll;
+
+  .fixed {
+    position: sticky;
+    top: 0;
+    background-color: rgb(84, 148, 52);
+    padding: 20px 10px 10px 10px;
+
+    .user{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      text-decoration: none;
+      background-color: rgb(214, 204, 110);
+      height: 60px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+
+      img {
+        height: 50px;
+        width: 50px;
+        border-radius: 2rem;
+        border: 2px solid white;
+        margin: 10px;
+      }
+
+      h2{
+        color: rgb(2, 10, 16);
+        margin-left: 6px;
+      }
+    }
+
+    .searchInput {
+      width: 95%;
+      outline: none;
+      border: none;
+      padding: 10px 20px;
+      background-color: rgb(243, 243, 243);
+      border-radius: 20px;
+    }
+
+    .addCon {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 25px 12px;
+      background-color: rgb(245, 245, 248);
+      padding: 5px 10px ;
+      border-radius: 5px;
+
+      p {
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        color: rgb(37, 36, 36);
+      }
+
+      button {
+        font-size: 20px;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        border: 1px solid gray;
+        background-color: transparent;
+        color: rgb(74, 74, 74);
+        cursor: pointer;
+
+        &:hover {
+          background-color: rgb(237, 237, 237);
+        }
+      }
+    }
+
+    .search {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+
+      input {
+        width: 100%;
+        outline: none;
+        padding: 4px 10px;
+        border-radius: 4px;
+      }
+
+      button {
+        padding: 2px 10px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .contactList {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 20px;
+    gap: 20px;
+    border: 2px solid rgb(84, 148, 52);
+
+    .contact {
+        display: flex;
+        gap: 18px;
+
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 2rem;
+        }
+
+        .contactText {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            p {
+                color: gray;
+                font-size: 14px;
+            }
+
+            .name {
+                font-size: 16px;
+                font-weight: 500;
+                color: black;
+            }
+        }
+    }
+  }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
